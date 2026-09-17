@@ -137,8 +137,6 @@ selection, or checkpoint selection.
   errors.
 - **CG:** `RelationshipTracker` and signed modulation inside
   `ConflictAwareGraphFusion.forward`.
-- **Objective:** `compute_carl_loss`, with
-  `L_cls + 0.1 L_recon + 0.1 L_ortho + 1.0 L_sem`.
 
 ## Citation and license
 
