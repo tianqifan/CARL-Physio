@@ -1,0 +1,36 @@
+dataset:
+  name: WESAD
+  task: three-class baseline/stress/amusement recognition
+  num_classes: 3
+  input_length: 2560
+  sampling_rate_hz: 256
+  window_seconds: 10
+  overlap: 0
+  modalities:
+    - {name: ECG, channels: [0]}
+    - {name: EDA, channels: [1]}
+    - {name: RSP, channels: [2]}
+    - {name: EMG, channels: [3]}
+    - {name: TEMP, channels: [4]}
+model:
+  fusion_blocks: [3, 4, 5]
+  relationship_blocks: [3, 4, 5]
+  num_heads: 4
+  graph_alpha: 2.0
+  relation_beta: 0.5
+  attention_bias_scale: 2.0
+  graph_residual_weight: 0.2
+  graph_temperature_initial: 6.0
+  relationship_warmup_epochs: 3
+  relationship_momentum: 0.9
+loss:
+  reconstruction: 0.1
+  orthogonality: 0.1
+  semantic: 1.0
+training:
+  seed: 2025
+  epochs: 50
+  batch_size: 256
+  learning_rate: 0.001
+  gradient_clip_norm: 1.0
+  device: cuda
