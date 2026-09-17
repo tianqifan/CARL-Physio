@@ -30,8 +30,6 @@ CARL_core_release/
 `-- verify_release.py       # architecture/configuration consistency checks
 ```
 
-Internal ablation, plotting, and reviewer-analysis scripts are not required to
-run CARL and are therefore outside this core release.
 
 ## Dataset access
 
