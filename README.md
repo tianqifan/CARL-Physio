@@ -1,5 +1,5 @@
 # CARL: core reproducibility release
-111111
+aaa
 This repository contains the minimal training and evaluation implementation of
 **Conflict-Aware Relational Learning (CARL)** used in the manuscript. It is not
 a simplified illustration: the released encoder dimensions, graph-fusion
@@ -142,7 +142,3 @@ selection, or checkpoint selection.
 
 ## Citation and license
 
-Add the final article citation and repository DOI after acceptance. A public
-release should also include the author-selected software license; no license is
-asserted here because that is an author/legal choice rather than a model or
-reproducibility setting.
